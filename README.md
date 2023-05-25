@@ -88,7 +88,7 @@ I made a mix of low and high fidelity wireframes for the pages of my website. Th
 
 ## Creator / Maintainer
 
-Rishabh Wu ([Rishabhdotexe](https://github.com/Rishabhdotexe))
+Rishabh Raj ([Rishabhdotexe](https://github.com/Rishabhdotexe))
 
 If you have any questions, comments, or concerns, feel free to contact me below.
 
@@ -109,4 +109,4 @@ If you like my content or find this code useful, give it a ⭐ or support me by 
 
 ### License
 
-Copyright &copy; 2021-2023 Rishabh Wu. All rights reserved.
+Copyright &copy; 2021-2023 Rishabh Raj. All rights reserved.
