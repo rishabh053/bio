@@ -88,7 +88,7 @@ I made a mix of low and high fidelity wireframes for the pages of my website. Th
 
 ## Creator / Maintainer
 
-Rishabh Raj ([Rishabhdotexe](https://github.com/Rishabhdotexe))
+Rishabh Raj ([rishabh053](https://github.com/rishabh053))
 
 If you have any questions, comments, or concerns, feel free to contact me below.
 
@@ -103,7 +103,7 @@ This project was created for educational purposes and for personal use. Feel fre
 
 If you like my content or find this code useful, give it a ⭐ or support me by buying me a coffee ☕💙
 
-<a href="https://www.buymeacoffee.com/Rishabhdotexe" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
+<a href="https://www.buymeacoffee.com/rishabh053" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
 
 ---
 
