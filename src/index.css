@@ -1,5 +1,20 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('/fonts/SF-Pro-Display.woff2') format('woff2'),
+       url('/fonts/SF-Pro-Display.woff') format('woff');
+  font-weight: 400 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SF Pro Text';
+  src: url('/fonts/SF-Pro-Text.woff2') format('woff2'),
+       url('/fonts/SF-Pro-Text.woff') format('woff');
+  font-weight: 400 700;
+  font-display: swap;
+}
+
 
 @tailwind base;
 @tailwind components;
@@ -43,12 +58,147 @@
   }
 
   body {
-    @apply bg-background text-foreground font-sans antialiased;
+    background: #f5f5f7;
+    color: #1d1d1f;
+    font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 17px;
+    letter-spacing: -0.01em;
     font-feature-settings: "ss01", "ss02", "cv01", "cv02", "cv03";
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+    transition: background 0.3s, color 0.3s;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: -0.02em;
+    font-weight: 600;
+    color: #1d1d1f;
+    margin-bottom: 0.5em;
+    transition: color 0.3s;
+  }
+  h1 { font-size: 3rem; letter-spacing: -0.03em; }
+  h2 { font-size: 2.25rem; letter-spacing: -0.02em; }
+  h3 { font-size: 1.5rem; letter-spacing: -0.01em; }
+  h4 { font-size: 1.25rem; }
+  h5 { font-size: 1.1rem; }
+  h6 { font-size: 1rem; }
+
+  p, li, span, a, button, input, textarea {
+    font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: -0.01em;
+    font-size: 1rem;
+    color: #1d1d1f;
+    transition: color 0.3s;
+  }
+
+  a {
+    color: #0071e3;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  a:hover {
+    color: #005bb5;
+    text-decoration: underline;
+  }
+
+  .apple-capsule {
+    border-radius: 9999px;
+    box-shadow: 0 2px 8px 0 rgba(60,60,67,0.08);
+    background: #fff;
+    padding: 0.75em 2em;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: box-shadow 0.2s, background 0.2s;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: inline-block;
+  }
+  .apple-capsule:hover, .apple-capsule:focus {
+    box-shadow: 0 4px 16px 0 rgba(60,60,67,0.12);
+    background: #f5f5f7;
+  }
+
+  .apple-card {
+    border-radius: 2rem;
+    box-shadow: 0 4px 24px 0 rgba(60,60,67,0.10);
+    background: #fff;
+    padding: 2rem;
+    transition: box-shadow 0.2s, background 0.2s;
+  }
+  .apple-card:hover {
+    box-shadow: 0 8px 32px 0 rgba(60,60,67,0.14);
+    background: #fafafc;
+  }
+
+  .apple-hero {
+    width: 100vw;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(120deg, #f5f5f7 60%, #e8eaed 100%);
+    margin-left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 32px 0 rgba(60,60,67,0.10);
+  }
+
+  .apple-navbar {
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    background: rgba(255,255,255,0.85);
+    backdrop-filter: blur(12px);
+    z-index: 100;
+    box-shadow: 0 1px 8px 0 rgba(60,60,67,0.04);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+    min-height: 56px;
+    font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: -0.01em;
+  }
+
+  .apple-navbar a {
+    color: #1d1d1f;
+    font-weight: 500;
+    margin: 0 1rem;
+    padding: 0.25em 0.5em;
+    border-radius: 0.5em;
+    transition: background 0.2s, color 0.2s;
+  }
+  .apple-navbar a:hover {
+    background: #f5f5f7;
+    color: #0071e3;
+  }
+
+  .apple-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  @media (min-width: 640px) {
+    .apple-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (min-width: 1024px) {
+    .apple-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .apple-transition {
+    transition: all 0.2s cubic-bezier(.4,0,.2,1);
   }
 
   html {
-    font-family: 'Inter', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     @apply scroll-smooth;
   }
 }
@@ -63,7 +213,7 @@
   }
   
   .section-container {
-    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24;
+    @apply w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-16;
   }
   
   .glass-card {
